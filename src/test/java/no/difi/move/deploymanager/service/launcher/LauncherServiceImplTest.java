@@ -86,7 +86,6 @@ public class LauncherServiceImplTest {
 
         assertThat(listArgumentCaptor.getValue()).containsExactly("java", "-jar", "test.jar",
                 "--management.endpoint.shutdown.enabled=true",
-                "--app.logger.enableSSL=false",
                 "--spring.profiles.active=staging"
         );
 
